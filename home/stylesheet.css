@@ -1,0 +1,174 @@
+/* ------------------ */
+/* 全体 */
+/* ------------------ */
+/* footer用にレイアウト調整 */
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #eee;
+  color: #333;
+}
+
+.main-title{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ------------------ */
+/* フッター */
+/* ------------------ */
+/* メニューをページ下部に固定 */
+#fixed-footer-menu {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  opacity: 1;
+  z-index: 100;
+}
+
+/* メニューを横並びにする */
+#fixed-footer-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #fff;
+}
+
+/* メニューの要素 */
+#fixed-footer-menu li {
+  justify-content: center;
+  align-items: center;
+  width: 25%; /* 要素が4つの場合（100/5） */
+  padding: 0;
+  margin: 0;
+}
+
+/* メニューのボタン */
+#fixed-footer-menu li a {
+  color: #333;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 15px 0px 15px 0px;
+  font-size: 8px;
+  text-decoration: none;
+}
+
+/* メニュータイトル */
+#fixed-footer-menu li p {
+  font-size: 8px; /* メニュータイトルのフォントサイズ */
+}
+
+/* アイコンのサイズを調整 */
+.footer-icon {
+  font-size: 20px;
+}
+
+/* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+.brand {
+  font-weight: bold;
+  font-size: 20px; }
+
+.site-header {
+  /* position: relative; */
+  background-color: #fff; 
+  position: fixed;
+  width: 100%;
+  top : 0px;
+  opacity: 1;
+  z-index: 100;
+}
+
+.site-header__wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem; 
+}
+
+@media (min-width: 600px) {
+  .site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0; 
+  } 
+}
+
+/* 見出し */
+/* h2 {
+  background: linear-gradient(transparent 70%, #CC99CC 70%);
+} */
+
+/*記事*/
+
+body {
+  background: #bcdee7;
+}
+.card {
+  margin: 30px auto;
+  width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+}
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 20px;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* .card{
+  width: 288px;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,.2)
+}
+.card__imgframe{
+  width: 100%;
+  height: auto;
+  padding-top: 56.25%;
+  background: #bbb;
+  box-sizing: border-box;
+}
+.card__textbox{
+  width: 100%;
+  height: auto;
+  padding: 20px 18px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.card__textbox > * + *{
+  margin-top: 10px;
+}
+.card__titletext{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 125%;
+}
+.card__overviewtext{
+  font-size: 12px;
+  line-height: 150%;
+} */

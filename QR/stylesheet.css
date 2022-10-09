@@ -1,0 +1,113 @@
+/* ------------------ */
+/* 全体 */
+/* ------------------ */
+/* footer用にレイアウト調整 */
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #eee;
+  color: #333;
+}
+
+.main-title{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ------------------ */
+/* フッター */
+/* ------------------ */
+/* メニューをページ下部に固定 */
+#fixed-footer-menu {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  opacity: 1;
+  z-index: 100;
+}
+
+/* メニューを横並びにする */
+#fixed-footer-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #fff;
+}
+
+/* メニューの要素 */
+#fixed-footer-menu li {
+  justify-content: center;
+  align-items: center;
+  width: 25%; /* 要素が4つの場合（100/5） */
+  padding: 0;
+  margin: 0;
+}
+
+/* メニューのボタン */
+#fixed-footer-menu li a {
+  color: #333;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 15px 0px 15px 0px;
+  font-size: 8px;
+  text-decoration: none;
+}
+
+/* メニュータイトル */
+#fixed-footer-menu li p {
+  font-size: 8px; /* メニュータイトルのフォントサイズ */
+}
+
+/* アイコンのサイズを調整 */
+.footer-icon {
+  font-size: 20px;
+}
+
+/* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+.brand {
+  font-weight: bold;
+  font-size: 20px; }
+
+.site-header {
+  /* position: relative; */
+  background-color: #fff; 
+  position: fixed;
+  width: 100%;
+  top : 0px;
+  opacity: 1;
+  z-index: 100;
+}
+
+.site-header__wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem; 
+}
+
+@media (min-width: 600px) {
+  .site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0; 
+  } 
+}
+
+/*画像*/
+.image {
+  background-color: #bcdee7;
+  display: flex;
+  width: 100%;
+  height: 650px;
+  align-items: center;
+  justify-content: center;
+}

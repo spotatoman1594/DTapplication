@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>DT prototype</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+
+        <!-- Header Start -->
+        <header class="site-header">
+            <div class="wrapper site-header__wrapper">
+                <a class="brand"><center>メッセージ</center></a>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <p>_</p>
+        <br>
+        <div id="your_container">
+
+            <!-- チャットの外側部分① -->
+            <div id="bms_messages_container">
+                <!-- ヘッダー部分② -->
+                <div id="bms_chat_header">
+                    <!--ステータス-->
+                    <div id="bms_chat_user_status">
+                        <!--ステータスアイコン-->
+                        <div id="bms_status_icon">●</div>
+                        <!--ユーザー名-->
+                        <div id="bms_chat_user_name">富士井 二郎</div>
+                    </div>
+                </div>
+
+                <!-- タイムライン部分③ -->
+                <div id="bms_messages">
+
+                    <!--メッセージ１（左側）-->
+                    <div class="bms_message bms_left">
+                        <div class="bms_message_box">
+                            <div class="bms_message_content">
+                                <div class="bms_message_text">初めまして。富士井です。</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bms_clear"></div><!-- 回り込みを解除（スタイルはcssで充てる） -->
+
+                    <!--メッセージ２（右側）-->
+                    <div class="bms_message bms_right">
+                        <div class="bms_message_box">
+                            <div class="bms_message_content">
+                                <div class="bms_message_text">富士田です。よろしくお願いします。</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bms_clear"></div><!-- 回り込みを解除（スタイルはcssで充てる） -->
+                </div>
+
+                <!-- テキストボックス、送信ボタン④ -->
+                <div id="bms_send">
+                    <textarea id="bms_send_message"></textarea>
+                    <div id="bms_send_btn">送信</div>
+                </div>
+            </div>
+        </div>
+
+        
+            <div id="fixed-footer-menu">
+                <ul>
+                <li><a href="home/index.html"><i class="fa-solid fa-house footer-icon"></i><br>
+                    </a></li>
+                <li><a href="QR/index.html"><i class="fa-solid fa-qrcode footer-icon"></i><br>
+                    </a></li>
+                <li><a href="chat/index.html"><i class="fa-sharp fa-solid fa-comments footer-icon"></i><br>
+                    </a></li>
+                <li><a href="profile/index.html"><i class="fa-solid fa-universal-access footer-icon"></i><br>
+                    </a></li>
+                </ul>
+            </div>
+    </body>
+</html>
