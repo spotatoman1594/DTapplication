@@ -110,6 +110,8 @@ body {
   bms_messages_containerの方で、縦横いっぱいに広がってくれるので、
   ここで充てた高さと横幅がそのままスタイルになる仕組み */
 
+  padding-top: 40px;
+  padding-bottom: 40px;
   height:425px;/*ここはご自由に*/
   width: 100%;/*ここはご自由に*/
 }
